@@ -1,0 +1,141 @@
+{
+  "marineQuotes": [
+    {
+      "id": "71a2",
+      "mobile": "7666666666",
+      "email": "k@gmail.com",
+      "company": "jghja",
+      "pincode": "413114",
+      "commodity": "as",
+      "cargoSum": "as",
+      "currency": "INR",
+      "customDuty": "",
+      "previousClaim": "No",
+      "coverType": "single",
+      "shipmentType": "domestic",
+      "createdAt": "2025-12-18T12:18:58.508Z"
+    }
+  ],
+  "workmenQuotes": [
+    {
+      "id": "9aa6",
+      "mobile": "9975829027",
+      "email": "karanc9027@gmail.com",
+      "company": "MayarGroup",
+      "pincode": "413114",
+      "industry": "Engineering workshop & Fabrication works (Above 9 meters)",
+      "skilledCount": "6",
+      "skilledSalary": "600",
+      "semiSkilledCount": "23",
+      "semiSkilledSalary": "500",
+      "unSkilledCount": "2",
+      "unSkilledSalary": "300",
+      "policyPeriod": "1",
+      "claimStatus": "no",
+      "createdAt": "2025-12-18T13:39:50.728Z"
+    },
+    {
+      "id": "2f32",
+      "mobile": "7666666666",
+      "email": "karanc9027@gmail.com",
+      "company": "MayraGroup",
+      "pincode": "413114",
+      "industry": "Builders - construction incl civil constructions",
+      "skilledCount": "6",
+      "skilledSalary": "111",
+      "semiSkilledCount": "23",
+      "semiSkilledSalary": "222",
+      "unSkilledCount": "1",
+      "unSkilledSalary": "555",
+      "policyPeriod": "1",
+      "claimStatus": "no",
+      "createdAt": "2025-12-22T07:25:31.133Z"
+    },
+    {
+      "id": "ee85",
+      "mobile": "1111111111",
+      "email": "k@gmail.com",
+      "company": "Mayra",
+      "pincode": "413114",
+      "industry": "Engineering workshop & Fabrication works (Above 9 meters)",
+      "skilledCount": "1",
+      "skilledSalary": "111",
+      "semiSkilledCount": "23",
+      "semiSkilledSalary": "222",
+      "unSkilledCount": "1",
+      "unSkilledSalary": "23",
+      "policyPeriod": "1",
+      "claimStatus": "no",
+      "createdAt": "2025-12-22T14:01:52.443Z"
+    }
+  ],
+  "groupHealthQuotes": [
+    {
+      "id": "892b",
+      "company": "MayraGroup.PTV.LTD",
+      "pincode": "413114",
+      "email": "karanc9027@gmail.com",
+      "mobile": "9975829027",
+      "firstTime": "yes",
+      "employees": 7,
+      "familyDefinition": "Employee + Family",
+      "sumInsured": "500000",
+      "selectedPlan": {
+        "id": "gold",
+        "name": "Gold",
+        "sumInsured": "₹1,00,000",
+        "premium": "₹19,239",
+        "features": [
+          "Ambulance ₹1,000",
+          "Room rent 1–2%",
+          "No sub-limit"
+        ]
+      }
+    },
+    {
+      "id": "cc90",
+      "company": "Mayra",
+      "pincode": "413114",
+      "email": "karanc9027@gmail.com",
+      "mobile": "7666666666",
+      "firstTime": "yes",
+      "employees": 11,
+      "familyDefinition": "Employee Only",
+      "sumInsured": "200000",
+      "selectedPlan": {
+        "id": "gold",
+        "name": "Gold",
+        "sumInsured": "₹1,00,000",
+        "premium": "₹19,239",
+        "features": [
+          "Ambulance ₹1,000",
+          "Room rent 1–2%",
+          "No sub-limit"
+        ]
+      }
+    },
+    {
+      "id": "7042",
+      "company": "MayraGroup.PTV.LTD",
+      "pincode": "413114",
+      "email": "k@gmail.com",
+      "mobile": "9975829029",
+      "firstTime": "yes",
+      "employees": 11,
+      "familyDefinition": "Employee Only",
+      "sumInsured": "200000",
+      "selectedPlan": {
+        "id": "platinum",
+        "name": "Platinum",
+        "sumInsured": "₹1,00,000",
+        "premium": "₹1,23,301",
+        "popular": true,
+        "features": [
+          "Ambulance ₹2,000",
+          "Room rent 2–4%",
+          "Pre-existing diseases covered"
+        ]
+      }
+    }
+  ]
+}

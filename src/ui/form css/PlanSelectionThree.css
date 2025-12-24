@@ -1,0 +1,202 @@
+/* ROOT */
+.gh-container {
+    display: flex;
+    min-height: 100vh;
+    font-family: "Inter", sans-serif;
+    background: #f4f6f9;
+}
+
+/* LEFT SUMMARY PANEL */
+.gh-summary {
+    width: 32%;
+    background: #003a6c;
+    color: #fff;
+    padding: 32px;
+}
+
+.gh-summary .back {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #ff7a00;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.gh-summary h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.gh-summary ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.gh-summary li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.gh-summary li span {
+    opacity: 0.75;
+}
+
+/* RIGHT CONTENT */
+.gh-card {
+    width: 68%;
+    padding: 40px;
+    background: #fff;
+}
+
+.gh-card h3 {
+    font-size: 26px;
+    margin-bottom: 30px;
+    color: #003a6c;
+}
+
+/* PLAN GRID */
+.plans {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* PLAN CARD */
+.plan-card {
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    padding: 20px;
+    background: #fafafa;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.plan-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.plan-card h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.plan-card .sum {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* FEATURES */
+.plan-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.plan-card li {
+    font-size: 14px;
+    padding: 6px 0;
+    color: #444;
+}
+
+/* PREMIUM */
+.plan-card .premium {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 12px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.plan-card .premium strong {
+    font-size: 16px;
+}
+
+/* POPULAR (PLATINUM) */
+.plan-card.popular {
+    background: linear-gradient(135deg, #f05a28, #c7261e);
+    color: #fff;
+    border: none;
+}
+
+.plan-card.popular li,
+.plan-card.popular .premium {
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* ACTIVE (SELECTED) */
+.plan-card.active {
+    outline: 3px solid #22c55e;
+}
+
+/* BOTTOM BAR */
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 68%;
+    background: #fff;
+    border-top: 1px solid #e5e7eb;
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-bar span {
+    font-size: 16px;
+}
+
+.bottom-bar strong {
+    font-size: 18px;
+    margin-left: 8px;
+}
+
+/* BUY BUTTON */
+.buy-btn {
+    background: #ff7a00;
+    border: none;
+    color: #fff;
+    padding: 12px 26px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.buy-btn:hover {
+    background: #e96a00;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+    .plans {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .gh-container {
+        flex-direction: column;
+    }
+
+    .gh-summary,
+    .gh-card {
+        width: 100%;
+    }
+
+    .plans {
+        grid-template-columns: 1fr;
+    }
+
+    .bottom-bar {
+        width: 100%;
+        left: 0;
+    }
+}

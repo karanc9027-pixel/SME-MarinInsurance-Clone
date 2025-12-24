@@ -1,0 +1,1006 @@
+/* ─── CSS ─── */
+
+.section-wrap {
+    font-family: 'Inter', sans-serif;
+    padding: 40px 0;
+    min-height: 100vh;
+    /* poori screen cover */
+
+    background-image: url('../../assets/images/marinInsurance/marine-bg-landing.svg');
+    background-size: cover;
+    /* contain se cover pe lao */
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    box-sizing: border-box;
+}
+
+
+
+
+.marine-banner .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* Left Block */
+.marine-left {
+    flex: 1 1 45%;
+    min-width: 300px;
+}
+
+.marine-title {
+    font: bolder;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.marine-stats {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.stat-box .stat-number {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* ------ */
+.stat-number {
+    color: #e95320
+}
+
+/* ------ */
+
+.stat-label {
+    font-size: 1rem;
+    color: #555;
+}
+
+.stat-sep {
+    width: 1px;
+    height: 40px;
+    background: #ccc;
+}
+
+/* =================== */
+.marine-market-leader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(270deg, #ffffff 0%, #ffeee5 100%);
+    /* left → right light fade */
+    padding: 10px 14px;
+    border-radius: 30px;
+    margin-top: 16px;
+    width: fit-content;
+    transform: scale(0.95);
+    /* Slightly smaller */
+}
+
+.marine-market-leader img {
+    width: 24px;
+    height: 24px;
+}
+
+.market-text {
+    font-size: 12px;
+    /* smaller text */
+    font-weight: 700;
+    color: #fff3f3;
+}
+
+.market-text sup {
+    font-size: 9px;
+}
+
+
+/* =========== */
+.market-text {
+    font-size: 1rem;
+    color: #333;
+}
+
+.benefit-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.benefit-item {
+    flex: 1 1 40%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.benefit-icon img {
+    width: 50px;
+    height: auto;
+}
+
+.benefit-text {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.note-fy {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+/* Right Block (Form) */
+/* RIGHT SIDE WRAPPER */
+.marine-right {
+    flex: 1 1 45%;
+    min-width: 600px;
+    position: relative;
+}
+
+/* FORM BOX */
+.marine-form {
+    background: #fff;
+    border-radius: 15px;
+    border: 1px solid #cbcdce;
+    padding: 2.4rem 4rem;
+    box-shadow: 3px 4px 23px rgba(0, 0, 0, 0.06);
+    position: relative;
+    z-index: 2;
+}
+
+/* Step Counter */
+.step-counter {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Form Heading */
+.form-head {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Input Blocks */
+.field-block {
+    margin-bottom: 15px;
+}
+
+.field-block label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.field-block input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b5b5b5;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+/* Error message */
+.error {
+    color: red;
+    font-size: 0.85rem;
+    display: none;
+}
+
+/* Buttons */
+.form-actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.btn-primary {
+    background: #e95320;
+    color: #fff;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background: #cc461b;
+}
+
+.btn-link {
+    color: #e95320;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* TNC Checkboxes */
+.form-tnc {
+    margin-top: 20px;
+    font-size: 0.85rem;
+}
+
+.form-tnc label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 8px;
+}
+
+/* WhatsApp icon */
+.form-tnc img {
+    width: 18px;
+    height: 18px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .marine-form {
+        padding: 2rem;
+    }
+}
+
+/* =========== WRAPPER =========== */
+/* =================== PERFECT MARINE BACKGROUND - ICICI LOMBARD STYLE =================== */
+/* Right column wrapper */
+
+
+/* ====================== */
+/* =================== BENEFIT LIST - PERFECT ALIGNMENT =================== */
+/* =============== BENEFIT SECTION LIKE ICICI LOMBARD ================= */
+/* =================== PERFECT BENEFIT GRID - ICICI LOMBARD STYLE =================== */
+/* ================= BENEFIT LIST (3 + 3 CLEAN DESIGN) ================= */
+/* Grid layout */
+.benefit-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+/* LEFT ICON + RIGHT TEXT SMALL CARD */
+.benefit-item {
+    background: #ffe2d4;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 12px 14px;
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    /* icon and text distance */
+
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* icon small */
+.benefit-icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #ffe2d4;
+    border-radius: 10px;
+}
+
+.benefit-icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+/* text */
+.benefit-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    margin: 0;
+}
+
+/* --------- Responsive -------- */
+@media (max-width: 1024px) {
+    .benefit-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .benefit-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =============================== */
+/* Main Wrapper */
+.marine-section {
+    padding: 60px 0;
+    width: 100%;
+}
+
+/* HEADINGS */
+.marine-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+.marine-desc,
+.marine-subtitle {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* WHAT SECTION */
+.marine-what-row {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.marine-what-text,
+.marine-what-img {
+    flex: 1;
+}
+
+.marine-what-img img {
+    width: 100%;
+    max-width: 450px;
+}
+
+/* BENEFITS GRID */
+.marine-benefits-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.marine-benefit-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.marine-benefit-icon {
+    width: 55px;
+    margin-bottom: 15px;
+}
+
+.marine-benefit-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.marine-benefit-text {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.5;
+}
+
+
+
+/* ================================== */
+/* Background (screenshot color) */
+.marine-section-bg {
+    background-color: #e3f1f6;
+    padding: 80px 0;
+}
+
+/* Wrapper */
+.how-work-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* Left Image */
+.how-work-image img {
+    width: 100%;
+    max-width: 520px;
+    display: block;
+}
+
+/* Right Content */
+.how-work-content h2 {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.how-work-content .sub-heading {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* The bullet list */
+.how-work-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.how-work-list li {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    padding-left: 30px;
+    position: relative;
+    color: #222;
+}
+
+/* Green Tick Icon (same as ICICI) */
+.how-work-list li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #1bb55c;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .how-work-section {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .how-work-image img {
+        max-width: 100%;
+    }
+}
+
+/* ========================================= */
+/* ============================
+   ICICI LOMBARD – MARINE FEATURES SECTION
+   Complete CSS (One File)
+============================ */
+
+/* 🔵 Main Section Background */
+.section-wrapp {
+    background: #1E3769;
+    padding: 60px 0;
+}
+
+.container {
+    max-width: 1200px;
+    /* 🔥 Increased from 200px → real website layout */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.heading2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.sub-txt {
+    font-size: 18px;
+    color: #dce6ff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* 🔥 Important: 3 Cards in One Row */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns */
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+/* Card */
+.feature-block-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    transition: 0.3s ease;
+    border: 1px solid #e5e5e5;
+}
+
+.feature-block-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.no-txt {
+    width: 45px;
+    height: 45px;
+
+    background: #000000;
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.block-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1E3769;
+    margin-bottom: 6px;
+}
+
+.block-desc {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* 🔥 Responsive */
+@media (max-width: 992px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 cards per row */
+    }
+}
+
+@media (max-width: 600px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+        /* 1 card per row */
+    }
+}
+
+/* ==================================== */
+/* SECTION BACKGROUND */
+.marine-should-buy {
+    background-color: #06335d;
+    padding: 80px 0;
+}
+
+/* CONTAINER */
+.marine-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* FLEX LAYOUT */
+.marine-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* LEFT TEXT */
+.marine-text {
+    max-width: 600px;
+    color: #ffffff;
+}
+
+.marine-text h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.marine-text p {
+    font-size: 16px;
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+/* LIST */
+.marine-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.marine-list li {
+    position: relative;
+    padding-left: 30px;
+    font-size: 16px;
+}
+
+/* GREEN CHECK ICON */
+.marine-list li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #22c55e;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* RIGHT IMAGE */
+.marine-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .marine-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .marine-list {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+
+    .marine-image {
+        margin-top: 30px;
+    }
+}
+
+/* ================================= */
+/* SECTION */
+.marine-exclude-section {
+    background-color: #fff6f0;
+    padding: 80px 0;
+}
+
+/* CONTAINER */
+.marine-exclude-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* WRAPPER */
+.marine-exclude-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+/* LEFT TEXT */
+.marine-exclude-text {
+    max-width: 620px;
+}
+
+.marine-exclude-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 16px;
+}
+
+.marine-exclude-subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+/* LIST */
+.marine-exclude-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.marine-exclude-list-item {
+    position: relative;
+    padding-left: 26px;
+    margin-bottom: 16px;
+    font-size: 15.5px;
+    line-height: 1.6;
+    color: #222;
+}
+
+/* ORANGE ARROW BULLET */
+.marine-exclude-list-item::before {
+    content: "➤";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: #f97316;
+    font-size: 14px;
+}
+
+/* RIGHT IMAGE */
+.marine-exclude-image-box {
+    flex-shrink: 0;
+}
+
+.marine-exclude-image {
+    max-width: 420px;
+    width: 100%;
+    height: auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .marine-exclude-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .marine-exclude-text {
+        max-width: 100%;
+    }
+
+    .marine-exclude-list {
+        text-align: left;
+    }
+
+    .marine-exclude-image-box {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .marine-exclude-title {
+        font-size: 28px;
+    }
+
+    .marine-exclude-image {
+        max-width: 300px;
+    }
+}
+
+/* =================================== */
+/* SECTION */
+.marine-blog-cards {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.marine-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* HEADING */
+.marine-blog-heading {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 50px;
+}
+
+/* GRID */
+.marine-blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* CARD */
+.marine-blog-card {
+    width: 450px;
+    margin-left: 30px;
+    background: #fff;
+    border: 1px solid #dcdcdc;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.marine-blog-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* IMAGE */
+.marine-blog-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.marine-blog-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* BODY */
+.marine-blog-body {
+    padding: 20px;
+}
+
+.marine-blog-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #222;
+    line-height: 1.4;
+    margin-bottom: 16px;
+}
+
+/* CTA */
+.marine-blog-cta {
+    font-size: 15px;
+    font-weight: 500;
+    color: #ff5a1f;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .marine-blog-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .marine-blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .marine-blog-heading {
+        font-size: 28px;
+    }
+
+    .marine-blog-image {
+        height: 180px;
+    }
+}
+
+/* button */
+.icici-btn {
+    background: #f37021;
+    /* ICICI orange brand color */
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 26px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+}
+
+.icici-btn .arrow {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.icici-btn:hover {
+    background: #d9571a;
+    transform: translateY(-2px);
+}
+
+.icici-btn:hover .arrow {
+    transform: translateX(4px);
+}
+
+.icici-btn:active {
+    transform: translateY(0);
+}
+
+/* ============================ */
+/* FAQ SECTION */
+.marine-faq {
+    background-color: #F8F6F6;
+    padding: 72px 0;
+}
+
+/* CONTAINER */
+.marine-faq-container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* HEADING */
+.marine-faq-heading {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    color: #1d1d1d;
+    margin-bottom: 40px;
+    line-height: 1.3;
+}
+
+/* FAQ LIST */
+.marine-faq-list {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+/* EACH ITEM */
+.marine-faq-item {
+    margin-bottom: 20px;
+}
+
+/* QUESTION */
+.marine-faq-question {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1f1f1f;
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+.marine-faq-question span {
+    margin-right: 6px;
+}
+
+/* ANSWER */
+.marine-faq-answer {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #555;
+    padding-left: 22px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .marine-faq {
+        padding: 50px 0;
+    }
+
+    .marine-faq-heading {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .marine-faq-question {
+        font-size: 16px;
+    }
+
+    .marine-faq-answer {
+        font-size: 14px;
+        padding-left: 18px;
+    }
+}
+
+/* ============================= */
+/* SECTION */

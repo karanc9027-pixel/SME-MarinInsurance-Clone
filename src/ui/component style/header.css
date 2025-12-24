@@ -1,0 +1,215 @@
+/* =====================================================
+   FONT
+===================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Inter", sans-serif !important;
+}
+
+/* =====================================================
+   TOP BAR
+===================================================== */
+.top-phone-link,
+.top-mail-link {
+    font-family: 'Inter', sans-serif !important;
+    color: #6c757d;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.2s ease;
+}
+
+.top-phone-link:hover,
+.top-mail-link:hover {
+    color: #e95320 !important;
+}
+
+/* =====================================================
+   TOP DROPDOWN
+===================================================== */
+.top-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.top-link,
+.need-help-link {
+    cursor: pointer;
+    padding: 4px 8px;
+    color: #6c757d;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.top-link:hover,
+.need-help-link:hover {
+    color: #e95320 !important;
+}
+
+.top-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    min-width: 180px;
+    border-radius: 6px;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 8px 0;
+    z-index: 1000;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.25s ease;
+}
+
+.top-dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.top-dropdown-item {
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s ease, padding-left 0.2s ease;
+}
+
+.top-dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #e95320;
+    padding-left: 20px;
+}
+
+/* =====================================================
+   MAIN NAVBAR
+===================================================== */
+.main-navbar {
+    background-color: #e95320 !important;
+    font-weight: 800 !important;
+    position: relative;
+    overflow: visible;
+}
+
+.nav-link-custom {
+    color: #fff !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 500;
+    padding: 12px 16px !important;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    white-space: nowrap;
+}
+
+/* =====================================================
+   MAIN MENU CARD (CLICK OPEN)
+===================================================== */
+.main-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 320px;
+    /* same feel, no UI change */
+    background: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #e6e6e6;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+    padding: 10px 0;
+    z-index: 999;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(12px);
+    transition: all 0.25s ease;
+}
+
+.main-dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* =====================================================
+   MAIN MENU ITEMS (HOVER ANIMATION)
+===================================================== */
+.main-dropdown-item {
+    padding: 12px 22px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #222;
+    cursor: pointer;
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        padding-left 0.25s ease;
+}
+
+.main-dropdown-item:hover {
+    background-color: #f7f7f7;
+    color: #e95320;
+    padding-left: 30px;
+}
+
+/* =====================================================
+   CHEVRON
+===================================================== */
+.chev {
+    transition: transform 0.25s ease;
+}
+
+.chev.rotate {
+    transform: rotate(180deg);
+}
+
+/* =====================================================
+   MOBILE VIEW
+===================================================== */
+@media (max-width: 991px) {
+
+    .navbar-collapse {
+        overflow-x: hidden;
+    }
+
+    .top-dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        border: none;
+        background: #f8f9fa;
+        padding-left: 20px;
+    }
+
+    .main-dropdown-menu {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        border: none;
+        padding: 8px 0;
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .main-dropdown-item {
+        padding: 14px 18px;
+        font-size: 14px;
+    }
+}

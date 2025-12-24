@@ -1,0 +1,209 @@
+/* ===============================
+   GROUP HEALTH INSURANCE BANNER
+================================ */
+
+.health-banners {
+    background: url('../../assets/images/');
+    padding: 50px 0 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Heading */
+.health-banners .heading1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 35px;
+}
+
+/* Layout */
+.group-healths {
+    align-items: flex-start;
+}
+
+/* ===============================
+   FEATURE CARDS
+================================ */
+
+.health-rules ul {
+    display: flex;
+    gap: 11px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px;
+}
+
+.health-rules ul li {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 12px;
+    padding: 16px 18px;
+    width: 320px;
+}
+
+.health-rules ul li img {
+    width: 32px;
+    height: 32px;
+}
+
+.health-rules ul li span {
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+}
+
+/* ===============================
+   STATS
+================================ */
+
+.policy-issue ul {
+    display: flex;
+    gap: 45px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.policy-issue ul li {
+    position: relative;
+    padding-right: 30px;
+}
+
+.policy-issue ul li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 10px;
+    height: 50px;
+    width: 1px;
+    background: #e5e5e5;
+}
+
+.policy-issue ul li span {
+    font-size: 28px;
+    font-weight: 700;
+    color: #f37021;
+}
+
+.policy-issue ul li p {
+    font-size: 14px;
+    color: #000;
+}
+
+.policy-issue .dates {
+    font-size: 13px;
+    color: #777;
+    margin-top: 1px;
+}
+
+/* ===============================
+   ICON-ONLY EXISTING CUSTOMER CARD
+================================ */
+.icici-form {
+    width: 100%;
+    max-width: 360px;
+    /* EXACT ICICI size */
+    margin-left: 400px;
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 100px;
+    /* stays fixed while scrolling */
+}
+
+.form-bot.icon-only {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #d9f1ff;
+    border-radius: 12px;
+    padding: 22px;
+    width: fit-content;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* ICON AS BACKGROUND */
+.query-customer {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px;
+}
+
+/* Hover */
+.form-bot.icon-only:hover {
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+}
+
+/* EXISTING CUSTOMER IMAGE (NOT ICON) */
+.existing-customer-image {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.existing-customer-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right-form-col {
+    display: flex;
+    justify-content: center;
+}
+
+.icici-form {
+    width: 100%;
+    max-width: 380px;
+    /* EXACT match */
+    background: #ffffff;
+    padding: 24px 22px;
+    /* Good padding */
+    border-radius: 12px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
+
+    /* Sticky scroll like ICICI */
+    position: sticky;
+    top: 90px;
+}
+
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 991px) {
+    .health-banners .heading1 {
+        font-size: 32px;
+    }
+
+    .health-rules ul {
+        flex-direction: column;
+    }
+
+    .health-rules ul li {
+        width: 100%;
+    }
+
+    .policy-issue ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .policy-issue ul li::after {
+        display: none;
+    }
+}
